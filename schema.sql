@@ -2,6 +2,8 @@
 -- It includes tables for users, roles, permissions, and logs.
 -- Book Table */
 
+--  Disable foreign key checks to allow table creation in any order
+SET FOREIGN_KEY_CHECKS = 0;
 CREATE TABLE Book (
     book_id INT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(100) NOT NULL,
@@ -789,6 +791,8 @@ INSERT INTO Logs (log_id, user_id, action, action_time) VALUES
 (10, 'Feedback submitted', '2019-07-20 16:50:27'),
 (12, 'Complaint submitted', '2017-03-122 09:15:39'),
 (14, 'Product review submitted', '2018-05-15 13:25:12');
+-- Re-enable foreign key checks for normal database operations
+SET FOREIGN_KEY_CHECKS = 1;
 
 /* Key Features of this Log Database Schema: */
 -- 1. User Activity Tracking: The Logs table captures various user activities, 
@@ -806,4 +810,7 @@ INSERT INTO Logs (log_id, user_id, action, action_time) VALUES
 -- 9. Timestamps reflect local time zones for each customer, activity frequency matches cultural shopping patterns.
 -- 10. The schema is designed to be scalable, allowing for the addition of new users and activities as needed.
 -- 11. The schema can be easily extended to include additional user activities or features in the future.
+
+
+
 
