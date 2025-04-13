@@ -24,8 +24,6 @@ One-to-many: Customers to Orders
 
 Referential integrity enforced through foreign keys
 
-
-
 Technical Implementation
 Features
 Inventory Management: Track stock levels and reordering
@@ -45,4 +43,8 @@ Team Contributions
 Team Member  	Role
 Samuel        Testing & Documentation
 Daniel    	  ER Diagram Design
+Emmanuella    Development of SQL Scripts & Databse Security
+
+A DRAW.IO file has been added to the assignment submission for our structure and layout with foreign and primary keys illustrated in it.
+
 Emmanuella	  SQL Implementation
